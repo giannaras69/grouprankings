@@ -1,0 +1,243 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ranking Board</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}body {
+font-family: 'Inter', sans-serif;
+background: #0b0b0f;
+color: white;
+min-height: 100vh;
+padding: 40px;
+background-image:
+  radial-gradient(circle at top left, rgba(255,255,255,0.05), transparent 30%),
+  radial-gradient(circle at bottom right, rgba(255,255,255,0.03), transparent 30%);
+}
+
+.container {
+  max-width: 1300px;
+  margin: auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 48px;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  color: #9ca3af;
+  font-size: 16px;
+}
+
+.rank-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+}
+
+.rank-card {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  overflow: hidden;
+  transition: 0.3s ease;
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.rank-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(255,255,255,0.2);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.45);
+}
+.rank-badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  background: linear-gradient(135deg, #ffd700, #ff9800);
+  color: black;
+  font-weight: 700;
+  font-size: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  z-index: 10;
+}
+
+.rank-card img {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-content {
+  padding: 18px;
+}
+
+.card-content h2 {
+  font-size: 22px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.score {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255,255,255,0.08);
+  color: #d1d5db;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.card-content p {
+  color: #9ca3af;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+@media (max-width: 700px) {
+  body {
+    padding: 20px;
+  }
+
+  .header h1 {
+    font-size: 34px;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>TOP RANKINGS</h1>
+      <p>Custom aesthetic leaderboard with 10 ranking cards.</p>
+    </div><div class="rank-grid">
+<!-- CARD 1 -->
+  <div class="rank-card">
+    <div class="rank-badge">#1</div>
+    <img src="https://res.cloudinary.com/dgw7rgmxu/image/upload/f_auto,q_auto/1000005155_w11gxl" alt="Rank 1">
+    <div class="card-content">
+      <h2>giannaras</h2>
+      <div class="score">Score: 9.9</div>
+      <p>THE mogger.</p>
+    </div>
+  </div>
+
+  <!-- CARD 2 -->
+  <div class="rank-card">
+    <div class="rank-badge">#2</div>
+    <img src="https://res.cloudinary.com/dgw7rgmxu/image/upload/f_auto,q_auto/1000006643_t7sk4d" alt="Rank 2">
+    <div class="card-content">
+      <h2>kwn</h2>
+      <div class="score">Score: 9.7</div>
+      <p>next marlon</p>
+    </div>
+  </div>
+
+  <!-- CARD 3 -->
+  <div class="rank-card">
+    <div class="rank-badge">#3</div>
+    <img src="https://res.cloudinary.com/dgw7rgmxu/image/upload/f_auto,q_auto/1000004576_ohxkhl" alt="Rank 3">
+    <div class="card-content">
+      <h2>buro</h2>
+      <div class="score">Score: 9.5</div>
+      <p>humble R.</p>
+    </div>
+  </div>
+
+  <!-- CARD 4 -->
+  <div class="rank-card">
+    <div class="rank-badge">#4</div>
+    <img src="https://via.placeholder.com/400x500" alt="Rank 4">
+    <div class="card-content">
+      <h2>Name Here</h2>
+      <div class="score">Score: 9.2</div>
+      <p>Add your description here.</p>
+    </div>
+  </div>
+
+  <!-- CARD 5 -->
+  <div class="rank-card">
+    <div class="rank-badge">#5</div>
+    <img src="https://via.placeholder.com/400x500" alt="Rank 5">
+    <div class="card-content">
+      <h2>Name Here</h2>
+      <div class="score">Score: 9.0</div>
+      <p>Add your description here.</p>
+    </div>
+  </div>
+<!-- CARD 6 -->
+  <div class="rank-card">
+    <div class="rank-badge">#6</div>
+    <img src="https://res.cloudinary.com/dgw7rgmxu/image/upload/f_auto,q_auto/1000006654_vssodr" alt="Rank 6">
+    <div class="card-content">
+      <h2>petros</h2>
+      <div class="score">Score: 8.8</div>
+      <p>anergos energos.</p>
+    </div>
+  </div>
+
+  <!-- CARD 7 -->
+  <div class="rank-card">
+    <div class="rank-badge">#7</div>
+    <img src="https://via.placeholder.com/400x500" alt="Rank 7">
+    <div class="card-content">
+      <h2>Name Here</h2>
+      <div class="score">Score: 8.5</div>
+      <p>Add your description here.</p>
+    </div>
+  </div>
+
+  <!-- CARD 8 -->
+  <div class="rank-card">
+    <div class="rank-badge">#8</div>
+    <img src="https://via.placeholder.com/400x500" alt="Rank 8">
+    <div class="card-content">
+      <h2>Name Here</h2>
+      <div class="score">Score: 8.2</div>
+      <p>Add your description here.</p>
+    </div>
+  </div>
+
+  <!-- CARD 9 -->
+  <div class="rank-card">
+    <div class="rank-badge">#9</div>
+    <img src="https://via.placeholder.com/400x500" alt="Rank 9">
+    <div class="card-content">
+      <h2>Name Here</h2>
+      <div class="score">Score: 8.0</div>
+      <p>Add your description here.</p>
+    </div>
+  </div>
+
+  <!-- CARD 10 -->
+  <div class="rank-card">
+    <div class="rank-badge">#10</div>
+    <img src="https://via.placeholder.com/400x500" alt="Rank 10">
+    <div class="card-content">
+      <h2>Name Here</h2>
+      <div class="score">Score: 7.8</div>
+      <p>Add your description here.</p>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</body>
+</html>
